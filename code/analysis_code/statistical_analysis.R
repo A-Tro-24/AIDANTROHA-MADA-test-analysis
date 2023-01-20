@@ -53,4 +53,24 @@ print(lmtable2)
 table_file2 = here("results", "resulttable2.rds")
 saveRDS(lmtable2, file = table_file2)
 
+############################
+#### First Figure
+# Height vs. BMI
+boxplot <- ggplot(data=mydata, aes(x=`BMI Status`,y=Height))+
+              geom_boxplot()
+
+# save figure results
+figure_file1 = here("results", "resultfigure1.rds")
+saveRDS(boxplot, file = figure_file1)
+
+############################
+#### First Figure
+# Height vs. BMI
+scatterplot <- ggplot(data=mydata, aes(x=Weight,y=Age))+
+                geom_point()
+
+# save figure results
+figure_file2 = here("results", "resultfigure2.rds")
+saveRDS(scatterplot, file = figure_file2)
+
   
