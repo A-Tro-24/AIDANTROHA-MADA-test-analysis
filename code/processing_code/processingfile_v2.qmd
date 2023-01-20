@@ -1,6 +1,6 @@
 ---
 title: "An example cleaning script with code pulled in"
-author: "Andreas Handel"
+author: "Andreas Handel & Aidan Troha"
 date: "2023-01-03"
 output: html_document
 ---
