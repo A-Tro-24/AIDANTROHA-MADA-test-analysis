@@ -124,6 +124,25 @@ knitr::kable(resulttable2)
 
 {{< pagebreak >}}
 
+Example @figure-file1 and @figure-file2 show figure options for the data.
+
+```{r}
+#| label: figure-file1
+#| tbl-cap: "Boxplot showing Height by BMI Status."
+#| echo: FALSE
+resultfigure1 = readRDS(here("results","resultfigure1.rds"))
+resultfigure1
+```
+
+
+```{r}
+#| label: figure-file2
+#| tbl-cap: "Scatterplot of Age Vs. Height."
+#| echo: FALSE
+resultfigure2 = readRDS(here("results","resultfigure2.rds"))
+resultfigure2
+```
+
 
 # Discussion
 
